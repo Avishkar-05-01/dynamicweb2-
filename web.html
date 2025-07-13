@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic One-Page Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for Dynamic Backgrounds and Animation -->
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        /* Home Section */
+        #home {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            animation: backgroundChange 5s infinite alternate;
+        }
+
+        /* About Section */
+        #about {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            animation: backgroundChange 5s infinite alternate;
+        }
+
+        /* Services Section */
+        #services {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            animation: backgroundChange 5s infinite alternate;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(45deg, #00b09b, #96c93d);
+            animation: backgroundChange 5s infinite alternate;
+        }
+
+        /* Keyframe Animation for Smooth Background Transitions */
+        @keyframes backgroundChange {
+            0% {
+                background: linear-gradient(45deg, #6a11cb, #2575fc);
+            }
+            100% {
+                background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            }
+        }
+
+        /* Scrollable Navigation Menu */
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+            .navbar-nav {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dynamic Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="section">
+        <h1>Welcome to the Home Section</h1>
+        <p>This is a dynamic background with a gradient transition effect!</p>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h1>About Us</h1>
+        <p>We are a dynamic website built using HTML, CSS, and Bootstrap.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section">
+        <h1>Our Services</h1>
+        <p>We offer web design, development, and hosting solutions.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out for more information or inquiries.</p>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
